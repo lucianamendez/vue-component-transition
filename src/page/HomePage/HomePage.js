@@ -9,5 +9,8 @@ export default {
       this.transitionController = new HomePageTransitionController(this);
       this.isReady();
     },
+    handleBack() {
+      this.$router.go(-1);
+    },
   },
 };
