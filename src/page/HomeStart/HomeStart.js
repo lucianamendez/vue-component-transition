@@ -1,4 +1,4 @@
-import { AbstractPageTransitionComponent } from 'vue-transition-component';
+import { FlowManager, AbstractPageTransitionComponent } from 'vue-transition-component';
 import HomeStartTransitionController from './HomeStartTransitionController';
 
 export default {
@@ -8,6 +8,9 @@ export default {
     handleAllComponentsReady() {
       this.transitionController = new HomeStartTransitionController(this);
       this.isReady();
+    },
+    onLeave(element, done) {
+      FlowManager.transitionOut.then(() => FlowManager.done()).then(done);
     },
   },
 };

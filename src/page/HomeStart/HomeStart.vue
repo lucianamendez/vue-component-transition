@@ -4,8 +4,11 @@
 <template>
 	<div :class="$style.startContainer">
 		<div :class="$style.block">
-			<span>HomeStart</span>
-			<router-link :to="{name: RouteNames.HOME}">Home Page </router-link>
+			<span>PAGE 0<br/>(Home Start)</span>
+			<router-link :to="{name: RouteNames.HOME}">GO TO PAGE 1</router-link>
 		</div>
+			<transition @leave="onLeave" v-bind:css="false">
+     			<router-view></router-view>      
+    		</transition>		
 	</div>
 </template>

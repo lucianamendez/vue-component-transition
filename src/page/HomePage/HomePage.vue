@@ -4,7 +4,7 @@
 <template>
 	<div :class="$style.homePageContainer">
 		<button :class="$style.backButton" @click="handleBack" >Back</button>
-		<h2 :class="$style.title">HomePage</h2>
+		<h2 :class="$style.title">PAGE 1<br/>(HomePage)</h2>
 		<transition
 			:css="false"
 			@leave="onLeave"
