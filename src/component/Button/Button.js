@@ -15,14 +15,5 @@ export default {
       this.transitionController = new ButtonTransitionController(this);
       this.isReady();
     },
-    handleBack() {
-      if (this.goTo === 'back') {
-        this.$router.go(-1);
-      } else if (this.goTo === 'next') {
-        this.$router.go(+1);
-      } else {
-        this.$router.go(+2);
-      }
-    },
   },
 };

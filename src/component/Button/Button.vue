@@ -2,5 +2,5 @@
 <script src="./Button.js"></script>
 
 <template>
-	<button :v-html="text" :class="$style[color]" @click="handleClick"   />
+	<button :class="$style[color]">{{ text }}</Button>
 </template>

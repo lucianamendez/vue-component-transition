@@ -1,8 +1,8 @@
 const RouteNames = {
   START: 'start',
   HOME: 'home',
-  SECOND: 'second',
-  THIRD: 'third',
+  NEXT: 'next',
+  OTHER: 'other',
 };
 
 export default RouteNames;

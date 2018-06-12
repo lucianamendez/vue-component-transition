@@ -1,4 +1,19 @@
 /* stylelint-disable-next-line block-no-empty */
 :local {
-
+  .second-page-container {
+    // position: absolute;
+    // right: 0;
+    height: 100vh;
+    width: 50%;
+    background-color: powderblue;
+    .title {
+      font-size: 30px;
+      text-align: center;
+    }
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+  }
 }

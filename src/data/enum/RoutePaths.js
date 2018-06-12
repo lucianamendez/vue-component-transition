@@ -1,8 +1,8 @@
 const RoutePaths = {
   START: '/',
   HOME: '/home',
-  SECOND: '/second-page',
-  THIRD: '/third-page',
+  NEXT: '/next',
+  OTHER: '/other',
 };
 
 export default RoutePaths;

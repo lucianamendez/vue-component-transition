@@ -3,6 +3,7 @@ import HomePage from 'page/HomePage';
 import RoutePaths from 'data/enum/RoutePaths';
 import RouteNames from 'data/enum/RouteNames';
 import HomeStart from 'page/HomeStart';
+import HomeSecondPage from 'page/HomeSecondPage';
 
 export default [
   {
@@ -17,22 +18,12 @@ export default [
         name: RouteNames.HOME,
         props: { [COMPONENT_ID]: RouteNames.HOME },
       },
+      {
+        path: RoutePaths.NEXT,
+        component: HomeSecondPage,
+        name: RouteNames.NEXT,
+        props: { [COMPONENT_ID]: RouteNames.NEXT },
+      },
     ],
   },
-  // {
-  //   path: RoutePaths.HOME,
-  //   components: {
-  //     default: HomePage,
-  //     name: RouteNames.HOME,
-  //   },
-  //   props: { [COMPONENT_ID]: RouteNames.HOME },
-  // children: [
-  //   {
-  //     name: RouteNames.START,
-  //     path: RoutePaths.START,
-  //     component: HomeStart,
-  //     props: { [COMPONENT_ID]: RouteNames.START },
-  //   },
-  // ],
-  // },
 ];

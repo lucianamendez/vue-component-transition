@@ -3,7 +3,8 @@
 
 <template>
 	<div :class="$style.homePageContainer">
-		<button :class="$style.backButton" @click="handleBack" >Back</button>
+		<!-- <button :class="$style.backButton" @click="handleBack" >Back</button> -->
+		<Button :class="$style.backButton" :component-id="'buttonBack'" @click.native="handleBack" :text="'Back'"/>
 		<h2 :class="$style.title">PAGE 1<br/>(HomePage)</h2>
 		<transition
 			:css="false"
@@ -11,7 +12,7 @@
 		>
 			<router-view />
 		</transition>
-		<button>Next Page</button>
-		<button>Other Page</button>
+		<Button @click.native="handleNext"  :component-id="'buttonNext'" :text="'Next Page'"/>
+		<Button @click.native="handleOther" :component-id="'buttonOther'" :text="'Other Page'"/>
 	</div>
 </template>
