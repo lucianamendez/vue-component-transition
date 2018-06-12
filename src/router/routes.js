@@ -4,6 +4,7 @@ import RoutePaths from 'data/enum/RoutePaths';
 import RouteNames from 'data/enum/RouteNames';
 import HomeStart from 'page/HomeStart';
 import HomeSecondPage from 'page/HomeSecondPage';
+import PageOther from 'page/PageOther';
 
 export default [
   {
@@ -23,6 +24,12 @@ export default [
         component: HomeSecondPage,
         name: RouteNames.NEXT,
         props: { [COMPONENT_ID]: RouteNames.NEXT },
+      },
+      {
+        path: RoutePaths.OTHER,
+        component: PageOther,
+        name: RouteNames.OTHER,
+        props: { [COMPONENT_ID]: RouteNames.OTHER },
       },
     ],
   },
